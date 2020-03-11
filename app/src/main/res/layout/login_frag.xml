@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/codeSpinner"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/input_box" />
+
+        <EditText
+            android:id="@+id/your_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="@string/your_phone"
+            android:background="@drawable/input_box"
+            android:textColorHint="@color/tab_color"
+            android:inputType="phone"
+            android:textColor="@color/tab_color"
+            tools:ignore="Autofill"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="30dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="@string/code"
+        android:background="@drawable/input_box"
+        android:textColorHint="@color/tab_color"
+        android:inputType="number"
+        android:textColor="@color/tab_color"
+        android:visibility="gone"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:background="@drawable/input_box"
+        android:textColorHint="@color/tab_color"
+        android:textColor="@color/tab_color"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/send_verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_button"
+        android:text="@string/send_verification_code"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_button"
+        android:text="@string/verify"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@null"
+        android:contentDescription="@string/start"
+        android:visibility="gone"
+        app:srcCompat="@drawable/login"
+        tools:ignore="VectorDrawableCompat" />
+
+</LinearLayout>
